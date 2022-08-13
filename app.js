@@ -16,6 +16,27 @@ function login() {
         swal("Password Should Be Must 8 Chracter");
     }
     input3.value = " ";
+
+    //loader
+    var main = document.querySelector(".main");
+    main.style.display = "none";
+
+    var loader = document.getElementById("loader");
+    loader.style.display = "block";
+
+    setTimeout(function () {
+        loader.style.display = "none"
+    }, 3000)
+
+    // mobile hybrid div
+    var main = document.querySelector(".main");
+    main.style.display = "none";
+
+    var quizApp = document.querySelector(".quiz-app");
+    setTimeout(function () {
+        quizApp.style.display = "block"
+    }, 3000)
+
 }
 
 function icon2() {
@@ -131,4 +152,14 @@ function signUp() {
         swal("Password Should Be Must 8 Chracter")
     }
     input7.value = " ";
+
+    var main = document.querySelector(".main1");
+    main.style.display = "none";
+
+    var loader = document.getElementById("loader");
+    loader.style.display = "block";
+
+    setTimeout(function () {
+        loader.style.display = "none"
+    }, 3000)
 }

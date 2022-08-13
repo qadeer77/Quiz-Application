@@ -70,6 +70,48 @@ a {
 
 #loader {
     display: none;
+    position: relative;
+    left: 500px;
+    top: 300px;
+    font-size: 500px;
+    color: white;
+}
+
+.quiz-app {
+    display: none;
+    background-color: white;
+    width: 420px;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    border-radius: 10px;
+}
+
+#hedain {
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+    top: 5px;
+}
+
+#heading2 {
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+    left: -52px;
+    top: -22px;
+}
+
+.para {
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+    top: -35px;
+    left: 17px;
+}
+
+#join {
+    border-color: black;
+    position: relative;
+    top: -25px;
+    width: 350px;
 }
 
 /* sign-up-form */
