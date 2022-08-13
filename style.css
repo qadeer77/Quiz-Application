@@ -68,6 +68,10 @@ a {
     display: none;
 }
 
+#loader {
+    display: none;
+}
+
 /* sign-up-form */
 .main1 {
     background-color: white;
