@@ -73,7 +73,7 @@ a {
     position: relative;
     left: 500px;
     top: 300px;
-    font-size: 500px;
+    font-size: 1000px;
     color: white;
 }
 
@@ -123,4 +123,54 @@ a {
     position: relative;
     left: 320px;
     top: 40px;
+}
+
+/* web&apphtmlpage */
+.main3 {
+    background-color: antiquewhite !important;
+    height: 657px;
+}
+
+#heading8 {
+    position: relative;
+    top: 50px;
+    left: -150px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#para2 {
+    font-size: 20px;
+    position: relative;
+    top: -35px;
+    left: 400px;
+}
+
+#hr5 {
+    position: relative;
+    top: 20px;
+    color: gray;
+    width: 1140px;
+}
+
+.mainaccordian {
+    position: relative;
+    top: 20px;
+    left: -5px;
+}
+
+#th {
+    position: relative;
+    left: 30px;
+}
+
+.td {
+    position: relative;
+    left: 30px;
+}
+
+#button10 {
+    width: 100px;
+    position: relative;
+    top: 5px;
+    left: -2px;
 }

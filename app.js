@@ -2,19 +2,19 @@
 function login() {
     // email address in sign-in-form
     var input2 = document.getElementById("input2");
-    if (input2.value.length === 0) {
-        swal("Please Enter Your Email Address")
-    }
+    // if (input2.value.length === 0) {
+    //     swal("Please Enter Your Email Address")
+    // }
     input2.value = " ";
 
     // password in sign-in form
     var input3 = document.getElementById("input3");
-    if (input3.value.length === 0) {
-        swal("Please Enter Your Password");
-    }
-    else if (input3.value.length < 8) {
-        swal("Password Should Be Must 8 Chracter");
-    }
+    // if (input3.value.length === 0) {
+    //     swal("Please Enter Your Password");
+    // }
+    // else if (input3.value.length < 8) {
+    //     swal("Password Should Be Must 8 Chracter");
+    // }
     input3.value = " ";
 
     //loader
@@ -127,30 +127,30 @@ function icon3() {
 function signUp() {
 
     var input4 = document.getElementById("input4");
-    if (input4.value.length === 0) {
-        swal("Please Enter Your First Name");
-    }
+    // if (input4.value.length === 0) {
+    //     swal("Please Enter Your First Name");
+    // }
     input4.value = " ";
 
     var input5 = document.getElementById("input5");
-    if (input5.value.length === 0) {
-        swal("Please Enter Your Last Name");
-    }
+    // if (input5.value.length === 0) {
+    //     swal("Please Enter Your Last Name");
+    // }
     input5.value = " ";
 
     var input6 = document.getElementById("input6");
-    if (input6.value.length === 0) {
-        swal("Please Enter Your Email Address");
-    }
+    // if (input6.value.length === 0) {
+    //     swal("Please Enter Your Email Address");
+    // }
     input6.value = " ";
 
     var input7 = document.getElementById("input7");
-    if (input7.value.length === 0) {
-        swal("Please Enter Your Password");
-    }
-    else if (input7.value.length < 8) {
-        swal("Password Should Be Must 8 Chracter")
-    }
+    // if (input7.value.length === 0) {
+    //     swal("Please Enter Your Password");
+    // }
+    // else if (input7.value.length < 8) {
+    //     swal("Password Should Be Must 8 Chracter")
+    // }
     input7.value = " ";
 
     var main = document.querySelector(".main1");
@@ -161,5 +161,14 @@ function signUp() {
 
     setTimeout(function () {
         loader.style.display = "none"
+    }, 3000)
+
+    // mobile hybrid div
+    var main = document.querySelector(".main1");
+    main.style.display = "none";
+
+    var quizApp = document.querySelector(".quiz-app");
+    setTimeout(function () {
+        quizApp.style.display = "block"
     }, 3000)
 }
