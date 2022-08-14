@@ -172,3 +172,4 @@ function signUp() {
         quizApp.style.display = "block"
     }, 3000)
 }
+

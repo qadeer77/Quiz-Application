@@ -73,7 +73,7 @@ a {
     position: relative;
     left: 500px;
     top: 300px;
-    font-size: 1000px;
+    font-size: 2000px;
     color: white;
 }
 
@@ -173,4 +173,39 @@ a {
     position: relative;
     top: 5px;
     left: -2px;
+}
+
+
+/* quiz.html */
+#heading9{
+    position: relative;
+    top: 150px;
+    left: -80px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#text{
+    position: relative;
+    top: 150px;
+    left: 240px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#button12{
+    width: 200px;
+    position: relative;
+    top: 160px;
+    left: 380px;
+}
+
+/* quiz.css */
+.text1{
+    position: relative;
+    left: 260px !important;
+}
+
+/* quiz.js */
+.text2{
+    position: relative;
+    left: 335px !important;
 }
