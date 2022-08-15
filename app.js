@@ -194,42 +194,42 @@ var htmlQuizQuestion = [
     },
     {
         question: "Q3 : Choose the correct HTML element for the largest heading:",
-        a: "<h6>",
-        b: "<heading>",
-        c: "<h1>",
-        d: "<head>",
+        a: "heading",
+        b: "heading2",
+        c: "<'h1'>",
+        d: "heading6",
         ans: "ans3",
     },
     {
         question: "Q4 : What is the correct HTML element for inserting a line break?",
-        a: "<br>",
-        b: "<lb>",
-        c: "<break>",
-        d: "<bra>",
+        a: "<'br'>",
+        b: "lb",
+        c: "break",
+        d: "bra",
         ans: "ans1",
     },
     {
         question: "Q5 : What is the correct HTML for adding a background color?",
-        a: "<body bg='yellow'>",
-        b: "<body style='background-color:yellow;'>",
-        c: "<background>yellow</background>",
-        d: "<body background-color='yellow'>",
+        a: "body bg='yellow'",
+        b: "<'body style='background-color:yellow;''>",
+        c: "yellow",
+        d: "<'body background-color='yellow''>",
         ans: "ans2",
     },
     {
         question: "Q6 : Choose the correct HTML element to define important text:",
-        a: "<i>",
-        b: "<strong>",
-        c: "<important>",
-        d: "<b>",
+        a: "i",
+        b: "<'strong'>",
+        c: "important",
+        d: "b",
         ans: "ans2",
     },
     {
         question: "Q7 : Choose the correct HTML element to define emphasized text:",
-        a: "<em>",
-        b: "<i>",
-        c: "<italic>",
-        d: "<abr>",
+        a: "<'em'>",
+        b: "i",
+        c: "italic",
+        d: "abr",
         ans: "ans1",
     },
     {
@@ -241,59 +241,59 @@ var htmlQuizQuestion = [
         ans: "ans1",
     },
     {
-        question: "Q9 : Which of these elements are all <table> elements?",
-        a: "<table> <tr> <td>",
-        b: "<table> <td> <tr>",
-        c: "<table> <tr> <tt>",
-        d: "<thead> <body> <tt>",
+        question: "Q9 : Which of these elements are all <'table'> elements?",
+        a: "<'table'> <'tr'> <'td'>",
+        b: "<'table'> <'td'> <'tr'>",
+        c: "<'table'> <'tr'> <'tt'>",
+        d: "<'thead'> <'body'> <'tt'>",
         ans: "ans1",
     },
     {
         question: "Q10 : How can you make a numbered list?",
-        a: "<dl>",
-        b: "<ol>",
-        c: "<list>",
-        d: "<ul>",
+        a: "<'dl'>",
+        b: "<'ol'>",
+        c: "<'list'>",
+        d: "<'ul'>",
         ans: "ans2",
     },
     {
         question: "Q11 : How can you make a bulleted list?",
-        a: "<list>",
-        b: "<ol>",
-        c: "<dl>",
-        d: "<ul>",
+        a: "<'list'>",
+        b: "<'ol'>",
+        c: "<'dl'>",
+        d: "<'ul'>",
         ans: "ans4",
     },
     {
         question: "Q12 : What is the correct HTML for making a checkbox?",
-        a: "<input type='checkbox'>",
-        b: "<check>",
-        c: "<input type='check'>",
-        d: "<checkbox>",
+        a: "<'input type='checkbox''>",
+        b: "<'check'>",
+        c: "<'input type='check''>",
+        d: "<'checkbox'>",
         ans: "ans1",
     },
     {
         question: "Q13 : What is the correct HTML for making a text input field?",
-        a: "<input type='text'>",
-        b: "<textfield>",
-        c: "<input type='textfield'>",
-        d: "<text>",
+        a: "<'input type='text''>",
+        b: "<'textfield'>",
+        c: "<'input type='textfield''>",
+        d: "<'text'>",
         ans: "ans1",
     },
     {
         question: "Q14 : What is the correct HTML for making a drop-down list?",
-        a: "<input type='dropdown'>",
-        b: "<select>",
-        c: "<input type='list'>",
-        d: "<list>",
+        a: "<'input type='dropdown''>",
+        b: "<'select'>",
+        c: "<'input type='list''>",
+        d: "<'list'>",
         ans: "ans2",
     },
     {
         question: "Q15 : Which HTML element defines the title of a document?",
-        a: "<meta>",
-        b: "<head>",
-        c: "<title>",
-        d: "<body>",
+        a: "<'meta'>",
+        b: "<'head'>",
+        c: "<'title'>",
+        d: "<'body'>",
         ans: "ans3",
     },
     {
@@ -306,34 +306,34 @@ var htmlQuizQuestion = [
     },
     {
         question: "Q17 : Which doctype is correct for HTML5?",
-        a: "<!DOCTYPE html>",
-        b: "<!DOCTYPE HTML5",
-        c: "<!DOCTYPE html public>",
-        d: "<!DOCTYPE html5i>",
+        a: "<'!DOCTYPE html'>",
+        b: "<'!DOCTYPE HTML5'>",
+        c: "<'!DOCTYPE html public'>",
+        d: "<'!DOCTYPE html5i'>",
         ans: "ans1",
     },
     {
         question: "Q18 : Which HTML element is used to specify a footer for a document or section?",
-        a: "<footer>",
-        b: "<bottom>",
-        c: "<section>",
-        d: "<margin>",
+        a: "<'footer'>",
+        b: "<'bottom'>",
+        c: "<'section'>",
+        d: "<'margin'>",
         ans: "ans1",
     },
     {
         question: "Q19 : What is the correct HTML element for playing video files?",
-        a: "<vedio>",
-        b: "<media>",
-        c: "<movie>",
-        d: "<film>",
+        a: "<'vedio'>",
+        b: "<'media'>",
+        c: "<'movie'>",
+        d: "<'film'>",
         ans: "ans1",
     },
     {
         question: "Q20 : What is the correct HTML element for playing audio files?",
-        a: "<sound>",
-        b: "<audio>",
-        c: "<mp3>",
-        d: "<mp4>",
+        a: "<'sound'>",
+        b: "<'audio'>",
+        c: "<'mp3'>",
+        d: "<'mp4'>",
         ans: "ans2",
     },
     {
@@ -370,10 +370,10 @@ var htmlQuizQuestion = [
     },
     {
         question: "Q25 : Which HTML element is used to specify a header for a document or section?",
-        a: "<section>",
-        b: "<head>",
-        c: "<top>",
-        d: "<header>",
+        a: "<'section'>",
+        b: "<'head'>",
+        c: "<'top'>",
+        d: "<'header'>",
         ans: "ans4",
     },
 ]
@@ -385,7 +385,15 @@ var option3 = document.querySelector("#option3");
 var option4 = document.querySelector("#option4");
 var next = document.querySelector("#next");
 
+
+var answers = document.getElementsByName("answer");
+
+var showScore = document.querySelector("#showScore");
+console.log(showScore);
+
 var qusetionCount = 0;
+var score = 0;
+var questionBack = 25;
 
 function loadQuestion() {
 
@@ -398,3 +406,72 @@ function loadQuestion() {
     option4.innerHTML = qusetionList.d;
 }
 loadQuestion();
+
+function getCheckAnswer() {
+    var answer;
+
+    for (var i = 0; i < answers.length; i++) {
+        if (answers[i].checked) {
+            answer = answers[i].id;
+        }
+    }
+    return answer;
+}
+
+function dselectAll() {
+    for (var i = 0; i < answers.length; i++) {
+        answers[i].checked = false;
+    }
+}
+
+next.addEventListener("click", () => {
+    var checkedAnswer = getCheckAnswer();
+    // console.log(checkedAnswer);
+
+    if (checkedAnswer === htmlQuizQuestion[qusetionCount].ans) {
+        score++;
+    }
+
+    qusetionCount++;
+
+    dselectAll();
+
+    if (qusetionCount < htmlQuizQuestion.length) {
+        loadQuestion();
+    }
+    else if (score > 17) {
+        showScore.innerHTML = `
+          <h4 id="heading50"> Congratulation You Have Passed ${score}/${htmlQuizQuestion.length} 🏆 </h4>
+          <button id="button34" onclick ="location.reload()" type="button" class="btn btn-primary">Play Again</button>
+        `
+        showScore.classList.remove("scoreArea")
+    }
+    else {
+        showScore.innerHTML = `
+          <h4 id="heading50"> You  Are Fail ${score}/${htmlQuizQuestion.length} 😞 </h4>
+          <button id="button34" onclick ="location.reload()" type="button" class="btn btn-primary">Play Again</button>
+        `
+        showScore.classList.remove("scoreArea")
+    }
+})
+
+
+// var startingMin = 30;
+var startingMin = 30;
+var time = startingMin * 60;
+
+var countDowne = document.getElementById("countDowne");
+
+setInterval(updateCountDown, 1000);
+
+function updateCountDown() {
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    // seconds = seconds < 30 ? '0' + seconds : seconds;
+    seconds = seconds < 30 ? '0' + seconds : seconds;
+
+    countDowne.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}
+

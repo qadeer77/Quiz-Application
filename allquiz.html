@@ -22,29 +22,39 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <div id="countDown">
+                        <p id="countDowne"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="white">
-                        <h4 id="heading21" class="question">Question Come Here</h4>
+                        <h5 id="heading21" class="question"></h5>
                         <div class="div">
                             <ul>
                                 <li>
-                                    <input type="radio" name="answer" id="ans1" class="answer">
-                                    <label for="ans1" id="option1">Answer Option</label>
+                                    <input type="radio" name="answer" id="ans1" class="answers">
+                                    <label for="ans1" id="option1"></label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="answer" id="ans2" class="answer">
-                                    <label for="ans2" id="option2">Answer Option</label>
+                                    <input type="radio" name="answer" id="ans2" class="answers">
+                                    <label for="ans2" id="option2"></label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="answer" id="ans3" class="answer">
-                                    <label for="ans3" id="option3">Answer Option</label>
+                                    <input type="radio" name="answer" id="ans3" class="answers">
+                                    <label for="ans3" id="option3"></label>
                                 </li>
                                 <li>
-                                    <input type="radio" name="answer" id="ans4" class="answer">
-                                    <label for="ans4" id="option4">Answer Option</label>
+                                    <input type="radio" name="answer" id="ans4" class="answers">
+                                    <label for="ans4" id="option4"></label>
                                 </li>
                             </ul>
-                            <button id="next" type="button" class="btn btn-primary">Next</button>
-                            <!-- <button id="button21" type="button" class="btn btn-primary">Back</button> -->
+                            <button onclick="submit()" id="next" type="button" class="btn btn-primary">Next</button>
+                            <!-- <button id="back" type="button" class="btn btn-primary">Back</button> -->
+                            <div id="showScore" class="scoreArea">
+
+                            </div>
                         </div>
                     </div>
                 </div>
