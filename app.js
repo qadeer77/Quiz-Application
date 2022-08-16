@@ -4,6 +4,27 @@ function login() {
     var input2 = document.getElementById("input2");
     var input3 = document.getElementById("input3");
 
+    var email1 = localStorage.getItem("Email");
+    var password1 = localStorage.getItem("Password");
+
+    // if (input2.value === email1 && input3.value === password1){
+        // var main = document.querySelector(".main");
+        // main.style.display = "none";
+
+        // var loader = document.getElementById("loader");
+        // loader.style.display = "block";
+
+        // setTimeout(function () {
+        //     loader.style.display = "none"
+        // }, 3000)
+
+        // var quizApp = document.querySelector(".quiz-app");
+        // setTimeout(function () {
+        //     quizApp.style.display = "block"
+        // }, 3000)
+
+    // }
+
     var emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/.test(input2.value);
     var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/.test(input3.value);
 
@@ -131,7 +152,6 @@ function icon3() {
 
     var icon1 = document.getElementById("icon1");
     icon1.style.display = "none";
-
     var button2 = document.getElementById("button2");
     button2.style.marginTop = "-10px"
 
@@ -144,6 +164,27 @@ function signUp() {
     var input5 = document.getElementById("input5");
     var input6 = document.getElementById("input6");
     var input7 = document.getElementById("input7");
+
+
+    // var localObj = {
+    //     firstName: input4.value,
+    //     lastName: input5.value,
+    //     email: input6.value,
+    //     password: input7.value,
+    // }
+
+    // var localObj_serialized = JSON.stringify(localObj);
+
+    localStorage.setItem("firstName",input4.value);
+    localStorage.setItem("lastName",input5.value);
+    localStorage.setItem("Email",input6.value);
+    localStorage.setItem("Password",input7.value);
+
+    
+    // var desirled = JSON.parse(localStorage.getItem("localObj"));
+
+
+
 
     var firstNameregex = /^\s*$/.test(input4.value);
     var lastNameregex = /^\s*$/.test(input5.value);
@@ -166,15 +207,13 @@ function signUp() {
         window.location.href = "./index.html";
     }
 
+
+
     input4.value = " ";
     input5.value = " ";
     input6.value = " ";
     input7.value = " ";
 }
-
-
-
-
 
 
 // htmlallquizes
@@ -477,6 +516,10 @@ function updateCountDown() {
     countDowne.innerHTML = `${minutes}:${seconds}`;
     time--;
 }
+
+
+
+
 
 
 
