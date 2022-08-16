@@ -2,31 +2,55 @@
 function login() {
     // email address in sign-in-form
     var input2 = document.getElementById("input2");
+    var input3 = document.getElementById("input3");
+
+    var emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/.test(input2.value);
+    var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/.test(input3.value);
+
+    if (emailRegex === true && passwordRegex === false) {
+        swal("Soory! Please Valid Password");
+        var main = document.querySelector(".main");
+        main.style.display = "block";
+
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+
+        var quizApp = document.querySelector(".quiz-app");
+        quizApp.style.display = "none";
+    }
+
+    else if (emailRegex === false && passwordRegex === true) {
+        swal("Soory! Please Valid Email Id");
+        var main = document.querySelector(".main");
+        main.style.display = "block";
+
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+
+        var quizApp = document.querySelector(".quiz-app");
+        quizApp.style.display = "none";
+    }
+
+    else if (emailRegex === true && passwordRegex === true) {
+        var main = document.querySelector(".main");
+        main.style.display = "none";
+
+        var loader = document.getElementById("loader");
+        loader.style.display = "block";
+
+        setTimeout(function () {
+            loader.style.display = "none"
+        }, 3000)
+
+        var quizApp = document.querySelector(".quiz-app");
+        setTimeout(function () {
+            quizApp.style.display = "block"
+        }, 3000)
+
+    }
     input2.value = " ";
 
-    // password in sign-in form
-    var input3 = document.getElementById("input3");
     input3.value = " ";
-
-    //loader
-    var main = document.querySelector(".main");
-    main.style.display = "none";
-
-    var loader = document.getElementById("loader");
-    loader.style.display = "block";
-
-    setTimeout(function () {
-        loader.style.display = "none"
-    }, 3000)
-
-    // mobile hybrid div
-    var main = document.querySelector(".main");
-    main.style.display = "none";
-
-    var quizApp = document.querySelector(".quiz-app");
-    setTimeout(function () {
-        quizApp.style.display = "block"
-    }, 3000)
 
 }
 
@@ -116,38 +140,25 @@ function icon3() {
 }
 
 function signUp() {
-
     var input4 = document.getElementById("input4");
-    input4.value = " ";
-
     var input5 = document.getElementById("input5");
-    input5.value = " ";
-
     var input6 = document.getElementById("input6");
-    input6.value = " ";
-
     var input7 = document.getElementById("input7");
+
+    var firstNameregex = /^\s*$/.test(input4.value);
+    var lastNameregex = /^\s*$/.test(input5.value);
+    var emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/.test(input6.value);
+    var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/.test(input7.value);
+
+    input4.value = " ";
+    input5.value = " ";
+    input6.value = " ";
     input7.value = " ";
-
-    var main = document.querySelector(".main1");
-    main.style.display = "none";
-
-    var loader = document.getElementById("loader");
-    loader.style.display = "block";
-
-    setTimeout(function () {
-        loader.style.display = "none"
-    }, 3000)
-
-    // mobile hybrid div
-    var main = document.querySelector(".main1");
-    main.style.display = "none";
-
-    var quizApp = document.querySelector(".quiz-app");
-    setTimeout(function () {
-        quizApp.style.display = "block"
-    }, 3000)
 }
+
+
+
+
 
 
 // htmlallquizes
