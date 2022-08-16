@@ -150,19 +150,19 @@ function signUp() {
     var emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/.test(input6.value);
     var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/.test(input7.value);
 
-    if (firstNameregex === true){
+    if (firstNameregex === true) {
         swal("Please Fill The FirstName Input")
     }
-    else if (lastNameregex === true){
+    else if (lastNameregex === true) {
         swal("Please Fill The LastName Input")
     }
-    else  if (emailRegex === true && passwordRegex === false) {
+    else if (emailRegex === true && passwordRegex === false) {
         swal("Soory! Please Valid Password");
     }
     else if (emailRegex === false && passwordRegex === true) {
         swal("Soory! Please Valid Email Id");
     }
-    else if (firstNameregex === false && lastNameregex === false && emailRegex === true && passwordRegex === true){
+    else if (firstNameregex === false && lastNameregex === false && emailRegex === true && passwordRegex === true) {
         window.location.href = "./index.html";
     }
 
