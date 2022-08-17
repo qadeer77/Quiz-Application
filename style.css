@@ -376,3 +376,188 @@ ul li {
     top: 110px;
     font-size: 30px;
 }
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* login page */
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .main {
+        position: relative;
+        left: 0px;
+        width: 350px;
+    }
+
+    .input1 {
+        position: relative;
+        left: 20px;
+        width: 310px;
+    }
+
+    button {
+        width: 285px;
+    }
+
+    h5 {
+        position: relative;
+        left: 70px;
+    }
+
+    #icon1 {
+        position: relative;
+        top: -8px;
+        left: 310px;
+    }
+
+    .quiz-app {
+        width: 350px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hedain {
+        position: relative;
+        left: -20px;
+        font-size: 30px;
+    }
+
+    #heading2 {
+        position: relative;
+        left: -60px;
+        font-size: 30px;
+    }
+
+    .para {
+        position: relative;
+        left: 10px;
+    }
+
+    #join {
+        width: 280px;
+    }
+
+    /* sign-up page */
+    .main1 {
+        width: 350px;
+        position: relative;
+        left: 0px;
+    }
+
+    #heading {
+        position: relative;
+        left: 60px;
+    }
+
+    /* loader */
+    #loader {
+        position: relative;
+        left: 160px;
+    }
+
+    /* web & app html page */
+    .main3 {
+        overflow-x: hidden;
+        height: 667px;
+    }
+
+    #heading8 {
+        position: relative;
+        top: 50px;
+        left: -10px;
+    }
+
+    #para2 {
+        position: relative;
+        left: 2px;
+        top: -5px;
+    }
+
+    .mainaccordian {
+        position: relative;
+        left: -20px;
+    }
+
+    /* quiz.html */
+    #heading9 {
+        position: relative;
+        left: -15px;
+    }
+
+    #text {
+        position: relative;
+        left: 15px;
+        font-size: 15px;
+    }
+
+    #button12 {
+        width: 100px;
+        position: relative;
+        left: 110px;
+    }
+
+    /* quiz.css */
+    .text1 {
+        position: relative;
+        left: 30px !important;
+    }
+
+    /* quiz.js */
+    .text2 {
+        position: relative;
+        left: 70px !important;
+        font-size: 30px;
+    }
+
+    /* all quiz.html */
+    .white {
+        width: 350px;
+        position: relative;
+        height: 300px;
+        left: 0px;
+    }
+
+    #next {
+        position: relative;
+        left: 220px;
+    }
+
+    #countDown p {
+        position: relative;
+        left: 290px;
+        font-size: 20px;
+    }
+
+    #heading21 {
+        font-size: 15px !important;
+    }
+
+    #option1 {
+        font-size: 13px;
+    }
+
+    #option2 {
+        font-size: 13px;
+    }
+
+    #option3 {
+        font-size: 13px;
+    }
+
+    #option4 {
+        font-size: 13px;
+    }
+
+    #showScore {
+        position: relative;
+        left: 20px;
+        top: 70px;
+    }
+
+}
