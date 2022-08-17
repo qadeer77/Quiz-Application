@@ -4,27 +4,6 @@ function login() {
     var input2 = document.getElementById("input2");
     var input3 = document.getElementById("input3");
 
-    var email1 = localStorage.getItem("Email");
-    var password1 = localStorage.getItem("Password");
-
-    // if (input2.value === email1 && input3.value === password1){
-        // var main = document.querySelector(".main");
-        // main.style.display = "none";
-
-        // var loader = document.getElementById("loader");
-        // loader.style.display = "block";
-
-        // setTimeout(function () {
-        //     loader.style.display = "none"
-        // }, 3000)
-
-        // var quizApp = document.querySelector(".quiz-app");
-        // setTimeout(function () {
-        //     quizApp.style.display = "block"
-        // }, 3000)
-
-    // }
-
     var emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/.test(input2.value);
     var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/.test(input3.value);
 
@@ -52,7 +31,29 @@ function login() {
         quizApp.style.display = "none";
     }
 
-    else if (emailRegex === true && passwordRegex === true) {
+    // else if (emailRegex === true && passwordRegex === true) {
+    //     var main = document.querySelector(".main");
+    //     main.style.display = "none";
+
+    //     var loader = document.getElementById("loader");
+    //     loader.style.display = "block";
+
+    //     setTimeout(function () {
+    //         loader.style.display = "none"
+    //     }, 3000)
+
+    //     var quizApp = document.querySelector(".quiz-app");
+    //     setTimeout(function () {
+    //         quizApp.style.display = "block"
+    //     }, 3000)
+
+    // }
+
+
+    var email1 = localStorage.getItem("email");
+    var password1 = localStorage.getItem("password");
+
+    if (input2.value === email1 && input3.value === password1) {
         var main = document.querySelector(".main");
         main.style.display = "none";
 
@@ -69,6 +70,13 @@ function login() {
         }, 3000)
 
     }
+    else if (input2.value !== email1 && input3.value === password1) {
+        swal("Your Email Id Is Incorrect")
+    }
+    else if (input2.value === email1 && input3.value !== password1) {
+        swal("Your Password Is Incorrect")
+    }
+
     input2.value = " ";
 
     input3.value = " ";
@@ -166,21 +174,27 @@ function signUp() {
     var input7 = document.getElementById("input7");
 
 
-    // var localObj = {
-    //     firstName: input4.value,
-    //     lastName: input5.value,
-    //     email: input6.value,
-    //     password: input7.value,
-    // }
+    var Obj = {
+        firstName: input4.value,
+        lastName: input5.value,
+        email: input6.value,
+        password: input7.value,
+    }
 
     // var localObj_serialized = JSON.stringify(localObj);
+    // localStorage.setItem("obj", localObj_serialized);
 
-    localStorage.setItem("firstName",input4.value);
-    localStorage.setItem("lastName",input5.value);
-    localStorage.setItem("Email",input6.value);
-    localStorage.setItem("Password",input7.value);
+    for (var key in Obj) {
+        localStorage.setItem(key, Obj[key]);
+    }
 
-    
+
+    // localStorage.setItem("firstName",input4.value);
+    // localStorage.setItem("lastName",input5.value);
+    // localStorage.setItem("Email",input6.value);
+    // localStorage.setItem("Password",input7.value);
+
+
     // var desirled = JSON.parse(localStorage.getItem("localObj"));
 
 
